@@ -1,0 +1,24 @@
+Hello, these are the steps to initialize the database for the web application.
+
+1. Download the latest XAMPP and install it on your desired computer.
+https://www.apachefriends.org/download.html
+
+2. Run XAMPP control panel, and start the process for Apache and MySQL by clicking the start button, they must be running in order for the application to work.
+
+3. Open Windows start menu, search for the cmd(Command Prompt) application.
+
+4. Enter these two line, press enter when prompted to enter password. (You will be sign in as a root user)
+cd C:\xampp\mysql\bin
+mysql -u root -p
+
+5. Enter these lines to create the database, and the tables for your database.
+create database bintulu_fishing_club;
+use bintulu_fishing_club;
+create table participants (id int NOT NULL auto_increment, name varchar(50) NOT NULL,gender varchar(1) not null, fee varchar(10) not null, PRIMARY KEY(id));
+create table catch(id int not null,weight decimal(10,3) not null,type varchar(50) null);
+
+6. Paste the folder "bintulu_fishing_club" containing the files into C:\xampp\htdocs.
+
+7. In Google Chrome, enter the following address "http://localhost/bintulu_fishing_club/index.php", bookmark the page for easy access.
+
+8. The application is now ready to use.
