@@ -9,4 +9,4 @@ Search functions to select participants base on name or ID.
 This offline web application is built with HTML,PHP and JavaScript while using MySQL as the back-end database.
 Most of the operations are done using XML request minimizing the need to change the web-page.
 # Terms of use
-While this web application is built for the Bintulu Mariner Club, any personnel or organizer is free to use this for non-profit purpose, do give me feedbacks and I will try to improve the application as much as I could.
+While this web application is built for the Bintulu Mariner Club, any personnel or organization is free to use this application for non-profit purposes, do give me credits and feedbacks and I will try to improve the application as much as I could.
