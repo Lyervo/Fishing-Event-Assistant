@@ -273,9 +273,26 @@ and open the template in the editor.
             xmlReq.send();
     }
     
+    function set_fee(id)
+    {
+        document.getElementById("confirmation").style.display = "none";
+        var xmlReq = new XMLHttpRequest();
+            xmlReq.onreadystatechange = function()
+            {
+                if (this.readyState == 4 && this.status == 200) 
+                {
+                    document.getElementById("output_space").innerHTML = this.responseText;
+                }
+            };
+            xmlReq.open("GET", "control/set_fee_by_id.php?id="+id, true);
+            xmlReq.send();
+    }
+    
     </script>
     
     <style>
+        
+        
         
         table
         {
@@ -283,6 +300,33 @@ and open the template in the editor.
             border: solid 1px black;
         }
         
+        button
+        {
+            border-radius: 10px;
+            background-color: cornsilk;
+            box-decoration-break: none;
+        }
+        
+        button:hover
+        {
+            background-color: palegoldenrod;
+        }
+        
+        
+        
+        
+        .remove_button_header
+        {
+            border: none;
+        }
+        
+        .remove_button_td
+        {
+            border-top: 1px solid black;
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+        }
         
         td,th
         {
